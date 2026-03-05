@@ -251,6 +251,32 @@
             Átlátható <em>árak</em>
         </x-section-header>
 
+        {{-- Új árlista --}}
+        <div class="mt-10">
+            <table class="w-full border-collapse">
+                <tbody>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Arckezelés tisztítással</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">19 500 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Hidratáló kezelés arcvasalóval</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">18 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Ránctalanító kezelés ultrahanggal</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">21 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Tápláló kezelés</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">15 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Frissítő arcmasszázs</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">10 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Tápláló masszázs</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">12 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Arc és dekoltázs masszázs</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">15 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Mikrodermabráziós arckezelés tisztítással</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">22 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Mikrodermabrázió + maszk</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">16 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Arcpakolás és maszkok</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">10 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Masszázs + mikrodermabrázió + ultrahang + pakolás</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">22 000 Ft</td></tr>
+                    <tr class="border-b border-rose-light"><td colspan="2" class="pt-5 pb-2 font-display text-[1.1rem] font-normal text-charcoal">Szemöldök és szempilla</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Szempilla festés</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">6 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Szemöldök festés</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">5 500 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Szemöldök szedés (csipesszel)</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">4 000 Ft</td></tr>
+                    <tr class="border-b border-cream-dark transition-colors hover:bg-cream"><td class="py-3.5 text-[0.88rem] text-skin-text pr-4">Szemöldök formázás (csipesszel / gyantával)</td><td class="py-3.5 text-[0.88rem] text-right font-medium text-rose-dark whitespace-nowrap">6 000 Ft</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        {{-- Régi tabos árlista --}}
+        @if(false)
         <div class="mt-10">
             {{-- Tabs --}}
             <div class="price-tabs flex gap-2 border-b border-cream-dark mb-10 overflow-x-auto">
@@ -329,6 +355,7 @@
                 </table>
             </div>
         </div>
+        @endif
 
         {{-- Prémium --}}
         <div class="price-premium bg-gradient-to-br from-charcoal to-[#4A3D3A] rounded-[1.5rem] p-8 text-white mt-10 grid grid-cols-2 gap-6 max-sm:grid-cols-1 reveal">
